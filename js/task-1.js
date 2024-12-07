@@ -102,12 +102,12 @@ const users = [
 //     users.filter(user => users.eyeColor === color)
     
 // Отримати масив імен користувачів за статтю (поле gender)
-const getUsersWithGender = (users, gender) => {
-    return users.reduce((acc, user) => {
-        if (user.gender === gender) {
-         acc.push(user.name)
-        }
-        return acc 
-    },[])
-}
-console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+// const getUsersWithGender = (users, gender) => {
+//     return users.reduce((acc, user) => {
+//         if (user.gender === gender) {
+//          acc.push(user.name)
+//         }
+//         return acc 
+//     },[])
+// }
+// console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
