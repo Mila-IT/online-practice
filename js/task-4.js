@@ -85,13 +85,24 @@
 // 2. Затем отфильтровать только тех, кто старше 18 лет.
 // 3. Для оставшихся пользователей создать новый массив, где каждый объект будет содержать только имя и возраст (без лишних данных).
 // 4. Результат должен быть отсортирован по имени в алфавитном порядке.
-const users = [
-  { name: "Alice", age: 25, city: "New York" },
-  { name: "Bob", age: 17, city: "Los Angeles" },
-  { name: "Charlie", age: 30, city: "Chicago" },
-  { name: "David", age: 19, city: "San Francisco" },
-  { name: "Eve", age: 22, city: "Boston" }
-];
+// const users = [
+//   { name: "Alice", age: 25, city: "New York" },
+//   { name: "Bob", age: 17, city: "Los Angeles" },
+//   { name: "Charlie", age: 30, city: "Chicago" },
+//   { name: "David", age: 19, city: "San Francisco" },
+//   { name: "Eve", age: 22, city: "Boston" }
+// ];
 
-const usersByAge = users.toSorted((a, b) => a.age - b.age).filter(user => user.age >= 18).map(user => ({name: user.name, age: user.age})).toSorted((a,b) => a.name.localeCompare(b.name))
-console.log(usersByAge)
+// const usersByAge = users.toSorted((a, b) => a.age - b.age).filter(user => user.age >= 18).map(user => ({name: user.name, age: user.age})).toSorted((a,b) => a.name.localeCompare(b.name))
+// console.log(usersByAge)
+
+// const text = 'This is a test. This test is only test.'
+
+// const wordsText = text.replace(/\./g, "").toLocaleLowerCase().split(' ').reduce((acc, word) => {
+//   acc[word] = (acc[word] || 0) + 1; return acc}, {});
+// console.log(wordsText)
+
+// const text = 'hello world';
+// const letterCount = text.replace(/\s+/g, '').toLocaleLowerCase().split('')
+//   .reduce((acc, letter) => {acc[letter] = (acc[letter] || 0) + 1; return acc},{})
+// console.log(letterCount)
